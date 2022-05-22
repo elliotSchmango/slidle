@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLIDLE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="puzzle_container">
+        <script>
+            //DIRECTIONS
+            alert("Rules: This is a sliding puzzle game. There are two 3-letter words and one 2-letter word. Using the mouse, click on an adjacent tile to an empty tile to swap it with the empty tile position. The final layout should have an empty block position at the bottom-right corner. Should you want to restart the game, please refresh the page.\nGood luck!!!")
+
+            //INITIAL SETUP
+            wordListA = ["ram", "ham", "nat", "sad", "ant", "cat", "pal", "act", "bar", "has", "zap", "tan", "ask", "bat", "cat", "sat"]
+            wordListO = ["bog", "bot", "cob", "cog", "cop", "cow", "dog", "fog", "hog", "god", "how", "hot", "log", "lot", "mom", "mop", "nod", "not", "won", "wow", "tot", "fob"]
+            wordList2 = ["hi", "he", "if", "is", "me", "oh", "on", "up"]
+            const wordA = wordListA[Math.floor(Math.random() * wordListA.length)]
+            const wordO = wordListO[Math.floor(Math.random() * wordListO.length)]
+            const word2 = wordList2[Math.floor(Math.random() * wordList2.length)]
+            wordSet = [wordA.charAt(0), wordA.charAt(1), wordA.charAt(2), wordO.charAt(0), wordO.charAt(1), wordO.charAt(2), word2.charAt(0), word2.charAt(1)]
+            console.log(wordA, wordO, word2)
+
+        </script>
+        <div class="puzzle_block">
+            <script>
+                document.write(wordSet[0])
+
+            </script>
+        </div>
+        <div class="puzzle_block">
+            <script>
+                document.write(wordSet[1])
+
+            </script>
+        </div>
+        <div class="puzzle_block">
+            <script>
+                document.write(wordSet[2])
+
+            </script>
+        </div>
+        <div class="puzzle_block">
+            <script>
+                document.write(wordSet[3])
+
+            </script>
+        </div>
+        <div class="puzzle_block">
+            <script>
+                document.write(wordSet[4])
+
+            </script>
+        </div>
+        <div class="puzzle_block">
+            <script>
+                document.write(wordSet[5])
+
+            </script>
+        </div>
+        <div class="puzzle_block">
+            <script>
+                document.write(wordSet[6])
+
+            </script>
+        </div>
+        <div class="puzzle_block">
+            <script>
+                document.write(wordSet[7])
+
+            </script>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
